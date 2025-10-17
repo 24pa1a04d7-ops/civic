@@ -1,0 +1,19 @@
+{
+  "name": "smart-diet-scanner",
+  "version": "1.0.0",
+  "description": "A Smart Diet Scanner app that analyzes food labels and provides personalized recommendations",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["diet", "nutrition", "food-scanning", "health", "ingredients"],
+  "author": "Smart Diet Scanner Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
